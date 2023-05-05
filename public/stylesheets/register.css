@@ -1,0 +1,26 @@
+body{
+    background-color: #e08121!important;
+    font-family: sans-serif;
+    width:auto;
+}
+.form-wrapper{
+    min-width: 100%;
+}
+
+h1{
+    font-family: sans-serif;
+    color: rgb(52, 52, 52) !important;
+    margin-top: 13%;
+}
+.card{
+    background-color: rgba(255,255,255, 0.75);
+    border-radius: 15%;
+    margin-bottom: 13%;
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+
+}
+@media (min-width: 1025px) {
+    .h-custom {
+    height: 100vh !important;
+    }
+    }

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/register.css">
+    <link rel="stylesheet" href="/stylesheets/common.css">
+
+    <title>Register</title>
+</head>
+
+<body class="text-center">
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+        <!-- Nav Bar Ejs File -->
+      <%- include('partials/nav.ejs') %>
+      
+        <section class="w-100 h-custom text-cemter mt-5">
+            <h1><strong>We just need a few details of yours<br>Thankyou :)</strong></h1>
+
+        </section>
+        <main role="main" class="inner cover">
+            <section class="h-100 h-custom">
+                <div class="container py-5 h-100">
+                    <div class="row d-flex justify-content-center align-items-center h-100">
+                        <div class="col-lg-8 col-xl-6 form-wrapper">
+                            <div class="card rounded-3">
+                                <img src="https://images.unsplash.com/photo-1529400971008-f566de0e6dfc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8am9ifGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                                    class="w-100"
+                                    style="height: 15rem;border-top-left-radius: .3rem; border-top-right-radius: .3rem;"
+                                    alt="Sample photo">
+                                <div class="card-body p-4 p-md-5">
+                                    <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Your dream job is just a few steps
+                                        away
+                                    </h3>
+
+                                    <form class="px-md-2" method="post" enctype="multipart/form-data">
+
+                                        <div class="form-outline mb-4">
+                                            <label class="form-label" for="form3Example1q">Full Name</label>
+                                            <input type="text" name="name" class="form-control"
+                                                placeholder="Enter your full name here" required />
+
+                                        </div>
+                                        <div class="form-outline mb-4">
+                                            <label class="form-label" for="form3Example1q">Age</label>
+                                            <input type="number" name="age" class="form-control"
+                                                placeholder="Enter your age here" />
+
+                                        </div>
+                                        <div class="form-outline mb-4">
+                                            <label class="form-label" for="form3Example1q">Phone Number</label>
+                                            <input type="number" name="phone" class="form-control"
+                                                placeholder="Enter you phone number here"/>
+
+                                        </div>
+                                        <div class="form-outline mb-4">
+                                            <label class="form-label" for="form3Example1q">Position Applying For:</label>
+                                            <input type="text" name="positionApplied" id="form3Example1q"
+                                                class="form-control"
+                                                placeholder="Enter the position you are applying for" required/>
+
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-6 mb-4">
+
+                                                <div class="form-outline datepicker">
+                                                    <label for="exampleDatepicker1" class="form-label">Date of
+                                                        Birth</label>
+                                                    <input type="date" name="dob" class="form-control"
+                                                        id="exampleDatepicker1" />
+
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-6 mb-4">
+                                                <label class="form-label">Gender</label>
+                                                <br>
+                                               <input type="text" name="gender" placeholder="Enter your Gender here" class="form-control">
+
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-4">
+                                            <label class="form-label">Current Role and Organisation Name </label>
+                                            <input type="text" name="currentRole" placeholder="If working,Enter your current Role and Organization" class="form-control">
+
+                                        </div>
+
+                                        <div class="row mb-4 pb-2 pb-md-0 mb-md-5">
+                                            <div class="col-md-12">
+
+                                                <div class="form-outline">
+                                                    <label class="form-label" for="form3Example1w"> Upload your resume
+                                                        here</label>
+                                                    <input type="file" name="resume"
+                                                        class="form-control"  required/>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="form-outline mb-4">
+                                            <label class="form-label" for="form3Example1q">Email</label>
+                                            <input type="text" name="email" class="form-control"
+                                                placeholder="Enter your email here. You will use it to login" required/>
+
+                                        </div>
+                                        <div class="form-outline mb-4">
+                                            <label class="form-label" for="form3Example1q" required>Password</label>
+                                            <input type="password" name="password" class="form-control"
+                                                placeholder="Enter your password here. Remember this!! " />
+
+                                        </div>
+
+                                        <button type="submit" class="btn btn-success btn-lg mb-1">Submit</button>
+
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

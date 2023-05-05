@@ -1,0 +1,11 @@
+section{
+    margin: 2em;
+    
+    border-radius: 5%;
+    font-family: sans-serif;
+}
+.card{
+    box-shadow: inset 0 0 5rem rgba(15, 49, 1, 0.4);
+    margin-bottom: 10%;
+}
+
