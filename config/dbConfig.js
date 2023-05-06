@@ -7,10 +7,10 @@ module.exports = {
     USER: 'root'
   },
   production: {
-    HOST: "localhost",
+    HOST: "containers-us-west-164.railway.app",
     DIALECT: "mysql",
-    PASSWORD: "1234",
-    DB: "yourhr_db",
+    PASSWORD: "Sh7ZO9r5nIgA6uI23ztr",
+    DB: "railway",
     USER:'root'
   },
 };
