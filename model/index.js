@@ -3,7 +3,8 @@ const Sequelize = require('sequelize');
 //Connecting to db
 const sequelize = new Sequelize(process.env.DB, process.env.USER, process.env.PASSWORD,{
 host : process.env.HOST,
-dialect : process.env.DIALECT
+dialect : process.env.DIALECT,
+port: process.env.DB_PORT
 })
 //Db contains all the database models and (sequelize and Sequelize) constants so that it can be used outside using imports 
 const db = {}
