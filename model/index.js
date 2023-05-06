@@ -17,6 +17,7 @@ db.userRole = require('./userRoles.model')(sequelize,Sequelize);
 
 
 
+
 //Relationship between user and userInfo
 db.user.hasOne(db.userInfo,{
     foreignKey:'userId'

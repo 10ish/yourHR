@@ -103,4 +103,5 @@ app.post("/login", userController.login);
 //Server Listening to PORT in .env file
 app.listen(serverConfig.PORT, () => {
   console.log("Server started on port" + serverConfig.PORT);
+  console.log(process.env.NODE_ENV);
 });
