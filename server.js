@@ -2,6 +2,8 @@
 const serverConfig = require("./config/serverConfig");
 //Requiring controllers for that will perform operation on the database
 const userController = require("./controller/user.controller");
+//Custom MiddleWare
+const registerMiddleware = require('./middlewares/register.middleware')
 //Requiring express package to set up the server
 const express = require("express");
 //Requiring File upload Module
@@ -90,7 +92,7 @@ User Routes
 app.get("/register", (req, res) => {
   res.render(`register`);
 });
-app.post("/register", userController.register);
+app.post("/register",[registerMiddleware.checkUniqueEmail], userController.register);
 
 //Login Routes
 app.get("/login", (req, res) => {

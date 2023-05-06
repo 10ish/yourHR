@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------------------------------------------------------------------
+Architecture : MVC Architecture
+
+1. Model : This contains all the relational tables that we have for our project. In the model folder we have an index.js file that exports the database along with all its models and functionality so that it can be used by other files. index.js is used to initializze database as well as the model
+
+2. View : This contains all our frontend files which are detected by ejs. Without using the views folder we cannot render the ejs templates using the express server
+
+3.Controller : Controller has all the operations that are performed on our database which is right now just limited to login and register.
+
+View ----------> Controller ---------------> Model
+
+4. Middlewares: They are for additional verification, in this we are only checking the email a new user tries to register is not already there in the databases
+5.Public path: Used to render static contact in express erver
+
+6. .dotenv : contains environment variable
+
+7.server.js: entry point/server 
+
+8. config: contains all the configuration files for Database, server, etc
+-------------------------------------------------------------------------------------------------------------------------------------
+

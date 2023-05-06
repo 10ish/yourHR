@@ -1,5 +1,4 @@
 const Sequelize = require('sequelize');
-const {DataTypes} = require('sequelize')
 //Setting up Sequelize
 const env = process.env.NODE_ENV||'developement'
 const dbConfig = require('../config/dbConfig')[env]
